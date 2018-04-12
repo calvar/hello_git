@@ -1,0 +1,67 @@
+>git init
+
+>git status
+
+>git add .      ###Añade archivos
+
+>git commit -m "mi primer commit"
+
+###hacer algunos cambios
+
+>git add .
+
+>git commit -m "mi segundo commit"
+
+>git log
+
+>git remote add origin ##some GitHub URL##
+
+#the default branch is "master" and "origin" is the name of the remote host
+
+>git push -u origin master  ##Branch master is set up to track remote branch master from origin. -u is so that the pushes are made to origin master by default
+
+## If the renote contains things that are not on the local the push is refused
+## In that case we have to clone the remote repository to local first
+
+>git clone ##some GitHub URL##
+
+#stage the new contents
+
+>git add .
+
+#shit does not work!!!
+
+
+
+#--------------------------------------------------------------------------
+
+1) Create your local repository, add the files and commit
+>git init
+>git add .
+>git commit -m "first commit"
+
+2) Create an empty repository in gitHub.
+
+3) Locally, add the remote repository URL as origin and verify the remote
+>git remote add origin ##git URL##
+>git remote -v
+
+4)put the local changes to gitHub (the master branch)
+>git push origin master
+
+5)Add a new file. After creating the file locally
+>git add .
+>git commit -m "added new file"
+
+6)Push the changes to the master branch of the remote repository 
+>git push remote master
+
+7)Pull changes made to the master branch of the remote repository to the local one
+>git pull origin master
+
+
+
+
+
+
+
