@@ -62,8 +62,14 @@
 8)See the differences
 >git diff HEAD
 
+9)Look at a previous commit
+>git checkout <commit-hash>
 
+10)Revert to the current state
+>git checkout master
 
+11)Create a commit which is the copy of the previous commit (undo)
+>git revert HEAD
 
 
 
